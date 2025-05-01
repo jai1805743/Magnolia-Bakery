@@ -1,0 +1,34 @@
+html, body {
+  overflow-x: hidden;
+}
+.hidden {
+  display: none;
+}
+.hamburger {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background: black;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20PX;
+  margin-left: 30PX;
+}
+.hamburger-top {
+  top: 0;
+}
+
+.hamburger-middle {
+  top: 8px;
+}
+
+.hamburger-bottom {
+  top: 16px;
+}  
