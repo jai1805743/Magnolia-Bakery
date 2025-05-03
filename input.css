@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+    overflow-x: hidden;
+  }
+.hidden {
+    display: none;
+  }
+  .multiple-slide-carousel {
+    width: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
