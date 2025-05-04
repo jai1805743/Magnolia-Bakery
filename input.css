@@ -1,17 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-html, body {
-    overflow-x: hidden;
+document.addEventListener("DOMContentLoaded", function () {
+  let swiperInstance;
+
+  function initSwiperIfLargeScreen() {
+    const isLargeScreen = window.innerWidth >= 1024;
+
+    if (isLargeScreen && !swiperInstance) {
+      swiperInstance = new Swiper(".multiple-slide-carousel", {
+        loop: true,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: "#slider-button-right",
+          prevEl: "#slider-button-left"
+        }
+      });
+    } else if (!isLargeScreen && swiperInstance) {
+      swiperInstance.destroy(true, true);
+      swiperInstance = null;
+    }
   }
-.hidden {
-    display: none;
-  }
-  .multiple-slide-carousel {
-    width: 100%;
-  }
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
+  initSwiperIfLargeScreen();
+  window.addEventListener("resize", initSwiperIfLargeScreen);
+});
+
+
+
+
