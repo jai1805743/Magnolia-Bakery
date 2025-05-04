@@ -1,29 +1,47 @@
-document.addEventListener("DOMContentLoaded", function () {
-  let swiperInstance;
-
-  function initSwiperIfLargeScreen() {
-    const isLargeScreen = window.innerWidth >= 1024;
-
-    if (isLargeScreen && !swiperInstance) {
-      swiperInstance = new Swiper(".multiple-slide-carousel", {
-        loop: true,
-        slidesPerView: 5,
-        spaceBetween: 20,
-        navigation: {
-          nextEl: "#slider-button-right",
-          prevEl: "#slider-button-left"
-        }
-      });
-    } else if (!isLargeScreen && swiperInstance) {
-      swiperInstance.destroy(true, true);
-      swiperInstance = null;
-    }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body {
+    overflow-x: hidden;
   }
-
-  initSwiperIfLargeScreen();
-  window.addEventListener("resize", initSwiperIfLargeScreen);
-});
-
-
-
-
+.hidden {
+    display: none;
+  }
+  .multiple-slide-carousel {
+    width: 100%;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+  
+  }
+  
+  .hamburger span {
+    height: 2px;
+    width: 24px;
+    background: black;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+  
+  
+  }
+  
+  .hamburger-top {
+    top: 0;
+  }
+  
+  .hamburger-middle {
+    top: 8px;
+  }
+  
+  .hamburger-bottom {
+    top: 16px;
+  }
+  
