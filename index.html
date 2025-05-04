@@ -37,7 +37,7 @@
   <!--second-section-start-->
   <div class="fullnavbar bg-white  ">
 
-  <div class="flex items-center lg:justify-between lg:mx-10 Lg:pt-4 justify-center">
+  <div class="flex items-center lg:justify-between lg:mx-10 Lg:pt-4  justify-center ml-20 pt-5">
     <div class="secondsection flex items-center space-x-8">
       <div class="firstcontent">
         <h1 class="font-bold w-10 text-2xl">JPPRADEEP</h1>
@@ -47,7 +47,16 @@
           <p class="font-semibold pt-1" style="font-size: 8px;">2005</p>
         </div>
       </div>
-      
+          <!-- Hamburger Icon (Mobile Only) -->
+    <button id="menu-btn" class="block md:hidden focus:outline-none hamburger absolute left-0 ">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+       <!-- Mobile Menu -->
+
+
+      <!---->
          <div class="secondcontent hidden md:flex  space-x-6  ">
    <div class="firstitem relative group inline-block text-left secondnav  md:flex  ">
     <a href="#" class="font-bold text-md flex hover:text-green-300">
@@ -373,22 +382,48 @@
       
      </div>
     </div>
-    <div class="secondcontent hidden md:flex  space-x-6 ">
+    <div class="secondcontent  space-x-6 ">
      <div class="flex space-x-8 items-center">
-     <div class="button">
+     <div class="button hidden md:flex ">
         <p class="  w-40 h-10 text-center pt-1 text-xl bg-purple-200 font-semibold  rounded-full hover:bg-purple-900 hover:text-white">ORDER ASAP</p>
      </div>
      <div class="flex space-x-5   ml-4">
-        <i class="fa fa-search text-lg border border-black w-8 h-8 flex items-center justify-center rounded-full hover:cursor-pointer"></i>
-        <i class="fa fa-user-o text-lg border border-black w-8 h-8 flex items-center justify-center rounded-full hover:cursor-pointer"></i>
-        <i class="fa fa-shopping-cart text-lg border border-black w-8 h-8 flex items-center justify-center rounded-full hover:cursor-pointer"></i>
+        <i class="fa fa-search text-lg border border-black w-8 h-8  items-center justify-center rounded-full hover:cursor-pointer hidden md:flex "></i>
+        <i class="fa fa-user-o text-lg border border-black w-8 h-8  items-center justify-center rounded-full hover:cursor-pointer hidden md:flex "></i>
+        <div class="text-end">
+        <i class="fa fa-shopping-cart lg:text-lg  text-xl   border border-black lg:w-8 lg:h-8 w-11 h-11 flex items-center justify-center   rounded-full hover:cursor-pointer "></i>
       </div>
             </div>
     </div>
   </div>
   </div>
   
+<!-- Mobile Menu -->
+<div id="menu" 
+class="md:hidden hidden flex flex-col px-10 justify-left space-y-4 py-6 bg-white shadow-md mt-4 w-full text-left"
+style="font-size: 21px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+<input type="text" placeholder="search  " class="rounded-xl w-60">
+
+<a href="#" class="hover:text-orange-700">ORDER</a>
+<a href="#" class="hover:text-orange-700">PRODUCTS</a>
+<a href="#" class="hover:text-orange-700">HOURS & LOCATION  </a>
+<a href="#" class="hover:text-orange-700">ABOUT US</a>
+
+<!-- Tablet-only menu item -->
+
+
+<a href="#" class="p-3 px-6 pt-2 text-white bg-purple-300 rounded-full hover:bg-purple-700 w-60">ORDER ASAP</a>
+
+
+<div class="account-icon">
+<i class="fa fa-user-circle text-4xl hover:text-blue-700"></i><br>
+
+</div>
+</div>
+
+  
   <!--second-section end-->
+
   <!--Third-section start-->
  
 <!-- Carousel -->
@@ -549,7 +584,7 @@
 
 <div class="secondcontent flex  justify-center">
   <div class="firstitem ">
-    <p class="font-sans border-b-2 border-gray-400 hover:cursor-pointer">VIEW MORE</p>
+    <p class="font-sans border-b-2 border-gray-400 hover:cursor-pointer hover:text-green-200">VIEW MORE</p>
   </div>
   <div class="seconditem">
   </div>
@@ -561,6 +596,7 @@
     
     
   </div>
+
   <div class="fifthsection ">
   
     <div class="buttons text-right  space-x-3 -mt-5 hidden lg:block">
@@ -682,20 +718,20 @@
     </div>
   <!---ninthsection-->
 
-<div class="flex py-5" style="background-color: #f7c0c3;">
+<div class="flex  flex-row flex-wrap-reverse     py-5" style="background-color: #f7c0c3;">
   
-  <div class="w-1/2 pt-7">
+  <div class="lg:w-1/2 pt-3 lg:pt-7">
     <div class=" text-center">
-    <h1 class="font-thin py-6 text-6xl" style="font-family:'Times New Roman', Times, serif;">Catering, Gifting& Events</h1></div>
+    <h1 class="font-thin lg:py-6 py-3 lg:text-6xl text-2xl" style="font-family:'Times New Roman', Times, serif;">Catering, Gifting& Events</h1></div>
     <div class=" text-center">
-    <p class="w-[600px] font-serif py-6 pl-20">Our catering, gifting and events team is ready to fill your event or celebration with a custom selection of Magnolia Bakery’s best creations. No occasion is too large—or too small!</p>
+    <p class="lg:w-[600px] font-serif py-6 lg:pl-20">Our catering, gifting and events team is ready to fill your event or celebration with a custom selection of Magnolia Bakery’s best creations. No occasion is too large—or too small!</p>
     </div>
     <div class=" text-center">
     <button class="bg-pink-950 hover:bg-green-300 hover:text-black px-10 rounded-xl py-3 text-white ">GET STARTED</button>
     </div>
   
     </div>
-    <div class="w-1/2">
+    <div class="lg:w-1/2 ">
 <img src="image19.jpg" class="">
     </div>
 </div>
@@ -709,13 +745,13 @@
   <img src="image20.jpg" class="absolute inset-0 w-full h-full object-cover opacity-30 z-0">
 
   <div class="relative z-10 p-8 text-center text-black">
-    <h1 class="text-5xl font-bold mb-4 pt-5">Join our Newsletter</h1>
+    <h1 class="lg:text-5xl text-2xl font-bold mb-4 lg:pt-5">Join our Newsletter</h1>
     <p class="text-lg   ">
       Get the freshest Magnolia Bakery updates and offers right to your inbox!<br>
       Plus, enjoy 10% off on your birthday when you share the date with us!
     </p>
     <div class="pt-10 flex items-center justify-center relative">
-    <div class="flex "><input type="text" placeholder="ENTER YOUR EMAIL" class="w-[500px] px-8 py-4 text-gray-400 font-medium  border-2 border-gray-950 rounded-lg bg-transparent hover:cursor-pointer">
+    <div class="flex "><input type="text" placeholder="ENTER YOUR EMAIL" class="lg:w-[500px] px-8 py-4 text-gray-400 font-medium  border-2 border-gray-950 rounded-lg bg-transparent hover:cursor-pointer">
     </div>
 <div class="flex -ml-10 mb-5">    <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 font-medium  absolute hover:cursor-pointer">
       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
@@ -791,11 +827,19 @@
 
 </div>
 </div>
-  
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
   
   
 
 
 
-</body>
+</body> 
 </html>
